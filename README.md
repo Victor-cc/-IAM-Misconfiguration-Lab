@@ -38,7 +38,7 @@ See the folder breakdown above.
 ## Setup Instructions
 
 1. Log into your AWS account
-2. Create a new IAM user named `test-admin`
+2. Create a new IAM user named `test-user`
 3. Attach the policy from `iam_policies/insecure_policy.json`
 4. Try accessing S3, EC2, and other services
 5. Use IAM Access Analyzer to inspect permissions
