@@ -1,15 +1,28 @@
-# IAM Misconfiguration Lab: What Could Go Wrong?
+# IAM Misconfiguration Lab: Detecting & Fixing Insecure AWS Permissions
 
 ##  Overview
 
-This project simulates a basic AWS IAM misconfiguration where a user is given overly broad permissions. 
-It walks through:
-- Setting up a user with admin-level access via JSON policy
-- Demonstrating dangerous operations they can perform
-- Using AWS IAM Access Analyzer and CloudTrail to detect the issue
-- Applying the Principle of Least Privilege to fix the problem
+This lab simulates and fixes common IAM misconfigurations in AWS.
+  It’s built to help beginners learn cloud security by:
 
+  Creating insecure IAM and S3 policies
+  
+  Detecting risks manually and via IAM Access Analyzer
+  
+  Replacing them with secure, least-privilege policies
 ---
+
+IAM-Misconfiguration-Lab/
+├── insecure-policy.json
+├── secure-policy.json
+├── s3-insecure-bucket-policy.json
+├── detection_steps.md
+├── fix.md
+└── screenshots/
+    ├── insecure-policy-iam-user.png
+    ├── insecure-policy-iam-user II.png 
+    ├── access-analyzer-finding.png
+    ├── S3 bucketpolicy updated.png
 
 ##  Objectives
 
@@ -19,13 +32,26 @@ It walks through:
 
 ---
 
+ Lab Workflow
+Create a test IAM user and attach insecure-policy.json
+
+Manually inspect permissions
+
+Use secure-policy.json to fix
+
+Attach s3-insecure-bucket-policy.json to a test bucket
+
+Use IAM Access Analyzer to detect the risk
+
 ##  Tools Used
 
-- AWS IAM
-- AWS CloudTrail
-- IAM Access Analyzer
-- AWS CLI (optional)
-- JSON policies
+IAM Console – Manual policy inspection
+
+IAM Access Analyzer – Automated detection of risky public access
+
+S3 Bucket Policy – Simulated public misconfiguration
+
+JSON policies
 
 ---
 
@@ -67,7 +93,7 @@ See `fix_guide.md`:
 
 ##  Screenshots
 
-Stored in `/screenshots/` — to be used in blog posts, LinkedIn content, or presentations.
+Stored in `/screenshots/` — for visual guidance on each step
 
 ---
 
@@ -77,6 +103,8 @@ Pull requests are welcome — especially policy improvements or better detection
 
 ---
 
+Author
+Victor C-C
 ##  License
 
 MIT
