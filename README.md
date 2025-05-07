@@ -65,28 +65,6 @@ See `fix_guide.md`:
 
 ---
 
-Over-Permissioned IAM Policy
-┌────────────────────────────┐
-│ User: DevOps Intern        │
-│ Action: *                  │
-│ Resource: *                │
-│ Access: Full AWS Account   │
-└────────────────────────────┘
-      Bad Practice
-
-               ↓
-
-Least Privilege IAM Policy
-┌────────────────────────────┐
-│ User: DevOps Intern        │
-│ Action: s3:GetObject       │
-│ Resource: S3 Bucket Only   │
-│ Access: Read-Only Access   │
-└────────────────────────────┘
-      Good Practice
-
----
-
 ##  Screenshots
 
 Stored in `/screenshots/` — to be used in blog posts, LinkedIn content, or presentations.
