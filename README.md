@@ -13,7 +13,7 @@ This lab simulates and fixes common IAM misconfigurations in AWS.
 ---
 
 IAM-Misconfiguration-Lab/
-├── insecure-policy.json
+```├── insecure-policy.json
 ├── secure-policy.json
 ├── s3-insecure-bucket-policy.json
 ├── detection_steps.md
@@ -23,6 +23,7 @@ IAM-Misconfiguration-Lab/
     ├── insecure-policy-iam-user II.png 
     ├── access-analyzer-finding.png
     ├── S3 bucketpolicy updated.png
+```
 
 ##  Objectives
 
